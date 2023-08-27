@@ -2,9 +2,9 @@ package assignment2;
 
 import java.util.Stack;
 
-class MyQueue {
-    public static Stack<Integer> f;
-    public static Stack<Integer> s;
+public class MyQueue {
+    private static Stack<Integer> f;
+    private static Stack<Integer> s;
     public MyQueue() {
         f=new Stack<>();
         s=new Stack<>();
@@ -58,17 +58,6 @@ class MyQueue {
     public void clear(){
         f.clear();
         s.clear();
-    }
-
-    public void add(int x){
-        f.push(x);
-    }
-    public int poll(){
-        if(!f.isEmpty()){
-            return f.pop();
-        }
-        System.out.println("Empty queue");
-        return -1;
     }
 
     public int size(){
