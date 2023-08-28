@@ -4,8 +4,8 @@ import java.util.Stack;
 
 public class MyCustomQueue {
 
-    private static Stack<Integer> f;
-    private static Stack<Integer> s;
+    private Stack<Integer> f;
+    private Stack<Integer> s;
     public MyCustomQueue() {
         f=new Stack<>();
         s=new Stack<>();
